@@ -1,6 +1,6 @@
 # PEC-PI
 
-This repository is reserved for the official implementation of 
+This repository is reserved for the implementation of 
 **Progressive Emotion Construction with Prompt Interaction (PEC-PI)**.
 
 The source code will be released publicly upon acceptance of the corresponding paper.
