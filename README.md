@@ -1,25 +1,22 @@
-# MSPR: Multi-stage Semantic-Guided Prompt Reasoning for Multimodal Sentiment Analysis
+# PEC-PI: Progressive Emotion Construction via Prompt Interaction for Multimodal Sentiment Analysis
 
-Official implementation of **MSPR**, a multi-stage framework for multimodal sentiment analysis that models affect understanding progressively through **Tone**, **Content**, and **Emotion**.
-
-
+Official implementation of **PEC-PI**, a multi-stage framework for multimodal sentiment analysis that progressively constructs affective representations through **Tone**, **Content**, and **Emotion**.
 
 ## Introduction
 
-Multimodal sentiment analysis requires joint reasoning over textual and visual cues. 
-However, sentiment is often implicit and progressively constructed, rather than directly observable from one-step multimodal fusion.
+Multimodal sentiment analysis requires joint reasoning over textual and visual cues. However, sentiment is often implicit and gradually emerges from perceptual observations, semantic understanding, and affective interpretation, rather than being directly captured through one-step multimodal fusion.
 
-MSPR addresses this problem with a three-stage framework:
+PEC-PI addresses this challenge by modeling multimodal emotion construction as a three-stage progressive process:
 
-- **Tone**: captures perceptual cues such as color, illumination, and overall atmosphere
-- **Content**: models semantic entities, scenes, and interactions
-- **Emotion**: performs higher-level affective interpretation
+- **Tone**: captures perceptual cues, such as color, illumination, and overall atmosphere
+- **Content**: identifies semantic entities, scenes, actions, and interactions
+- **Emotion**: derives high-level affective interpretations from perceptual and semantic evidence
 
-To support this progressive reasoning process, MSPR introduces:
+To support this progressive emotion construction process, PEC-PI introduces:
 
-1. **Hierarchical caption supervision** for stage-wise semantic guidance
-2. **Prototype-centered prompt interaction** for cross-modal affect transfer
-3. **Dual-path contrastive alignment** for structured affective representation learning
+1. **Multi-stage semantic guidance** to provide stage-specific supervision from Tone to Content and Emotion
+2. **Prototype-centered prompt interaction** to facilitate cross-modal affective information transfer
+3. **Dual-path contrastive alignment** to learn structured and sentiment-discriminative multimodal representations
 
 ## Framework Overview
 
@@ -27,8 +24,8 @@ To support this progressive reasoning process, MSPR introduces:
   <img src="figures/image.png" width="85%">
 </p>
 
-MSPR models multimodal affect understanding as a progressive process from **Tone** to **Content** and finally **Emotion**, with stage-wise caption supervision, prompt interaction, and prototype-guided alignment.
+PEC-PI progressively constructs multimodal affective representations from **Tone** to **Content** and finally **Emotion**. Stage-wise semantic guidance supports this evolving process, while prototype-centered prompt interaction and dual-path contrastive alignment promote effective cross-modal interaction and structured affective representation learning.
 
-The source code will be released publicly upon acceptance of the corresponding paper. This repository currently serves as a placeholder for reference and linkage purposes.
+The source code will be released publicly. This repository currently serves as a placeholder for reference and linkage purposes.
 
 Thank you for your interest.
